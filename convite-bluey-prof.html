@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Convite da Festa - Miguell 5 Anos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(to bottom, #aee1f9, #ffffff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .banner {
+      background: url('https://i.imgur.com/rd6JDZm.png') no-repeat center top;
+      background-size: contain;
+      height: 250px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #ff7f00;
+      margin: 20px 0 10px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      color: #0077cc;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin: 20px 0;
+    }
+
+    .info-box p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-size: 1.1em;
+      margin-top: 15px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .button:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+
+    #map {
+      display: none;
+      margin-top: 20px;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .map-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner"></div>
+
+  <div class="container">
+    <h1>🎈 Miguell faz 5 anos! 🎈</h1>
+    <h2>Junte-se a nós para uma festa divertida com a Bluey!</h2>
+
+    <div class="info-box">
+      <p><strong>📆 Data:</strong> 12 de Julho de 2025</p>
+      <p><strong>⏰ Horário:</strong> 19:00h</p>
+      <p><strong>📍 Local:</strong> Rua Benedito Nunes, 297<br>Outeiro das Pedras - Itaboraí</p>
+
+      <a class="button" onclick="showMap()">Ver Referência do Local 🗺️</a>
+
+      <div id="map">
+        <p><strong>Referência:</strong> Rua da CEMEI Maria das Dores, 2ª quadra à esquerda.</p>
+        <img class="map-img" src="https://via.placeholder.com/600x300?text=Mapa+Referencial" alt="Mapa de Referência">
+      </div>
+    </div>
+
+    <footer>
+      💙 Esperamos você para brincar, dançar e se divertir com a Bluey e sua turma!
+    </footer>
+  </div>
+
+  <script>
+    function showMap() {
+      document.getElementById("map").style.display = "block";
+    }
+  </script>
+</body>
+</html>
